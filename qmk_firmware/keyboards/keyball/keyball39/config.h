@@ -77,3 +77,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // To squeeze firmware size
 #undef LOCKING_SUPPORT_ENABLE
 #undef LOCKING_RESYNC_ENABLE
+
+// Combo機能の設定
+#define COMBO_COUNT 2
+#define COMBO_TERM 50  // 同時押しの判定時間（ミリ秒）

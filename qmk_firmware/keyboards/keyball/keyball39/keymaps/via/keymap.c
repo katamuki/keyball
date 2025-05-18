@@ -20,6 +20,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "quantum.h"
 
+// Comboの設定
+enum combos {
+    JK_COMBO,  // KとJのCombo
+    SD_COMBO,  // SとDのCombo
+};
+
+const uint16_t PROGMEM jk_combo[] = {KC_J, KC_K, COMBO_END};
+const uint16_t PROGMEM sd_combo[] = {KC_S, KC_D, COMBO_END};
+
+combo_t key_combos[] = {
+    [JK_COMBO] = COMBO(jk_combo, KC_LNG2),  // 日本語入力
+    [SD_COMBO] = COMBO(sd_combo, KC_LNG1),  // 英語入力
+};
+
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
