@@ -30,7 +30,7 @@ const uint16_t PROGMEM kl_combo[] = {KC_K, KC_L, COMBO_END};
 const uint16_t PROGMEM sd_combo[] = {KC_S, KC_D, COMBO_END};
 
 combo_t key_combos[] = {
-    [kl_COMBO] = COMBO(kl_combo, KC_LNG1),  // LNG1: 日本語入力
+    [KL_COMBO] = COMBO(kl_combo, KC_LNG1),  // LNG1: 日本語入力
     [SD_COMBO] = COMBO(sd_combo, KC_LNG2),  // LNG2: 英語入力
 };
 
